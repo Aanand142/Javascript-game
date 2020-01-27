@@ -24,7 +24,7 @@ function win(user, computer){
     userscore_span.innerHTML=userscore;
     const small_user="user".fontsize(3).sup ;
     const small_computer="computer".fontsize(3).sup ;
-    result_div.innerHTML=convert(user)+" beats "+convert(computer);  
+    result_div.innerHTML=convert(user)+" beats "+convert(computer)+" You won ";  
     
 
 }
@@ -34,7 +34,7 @@ function lose(user, computer){
     
     computerscore++;
     computerscore_span.innerHTML=computerscore;
-    result_div.innerHTML=convert(computer)+" beats "+ convert(user);
+    result_div.innerHTML=convert(computer)+" beats "+ convert(user)+" You lost ";
         
 }
     
