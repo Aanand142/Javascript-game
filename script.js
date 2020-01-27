@@ -22,9 +22,10 @@ function win(user, computer){
       
     userscore++;
     userscore_span.innerHTML=userscore;
-    const small_user="user".fontsize(3).sup ;
-    const small_computer="computer".fontsize(3).sup ;
-    result_div.innerHTML=convert(user)+" beats "+convert(computer)+" You won ";  
+    var str1= "user";
+    var str2= " computer";
+    var result= convert(user)+ str1.sub().fontsize(5)+" beats "+ convert(computer)+ str2.sub().fontsize(5);
+    result_div.innerHTML= result;
     
 
 }
@@ -34,7 +35,10 @@ function lose(user, computer){
     
     computerscore++;
     computerscore_span.innerHTML=computerscore;
-    result_div.innerHTML=convert(computer)+" beats "+ convert(user)+" You lost ";
+    var str1= "user";
+    var str2= " computer";
+    var result= convert(computer)+ str2.sub().fontsize(5)+" beats "+ convert(user)+ str1.sub().fontsize(5);
+    result_div.innerHTML= result;
         
 }
     
